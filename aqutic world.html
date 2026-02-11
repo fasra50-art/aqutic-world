@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquatic Word - Exotic Fishes, Aquatic Plants, and Accessories for Sale</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f8ff; color: #333; }
+        header { background-color: #007bff; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #0056b3; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        .container { max-width: 1200px; margin: 20px auto; padding: 20px; }
+        .product { border: 1px solid #ddd; margin: 10px; padding: 10px; display: inline-block; width: 300px; text-align: center; background-color: white; vertical-align: top; }
+        .product img { width: 100%; height: 200px; object-fit: cover; }
+        .category { margin-top: 40px; }
+        footer { background-color: #007bff; color: white; text-align: center; padding: 10px; position: fixed; width: 100%; bottom: 0; }
+        @media (max-width: 768px) { .product { width: 100%; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aquatic Word</h1>
+        <p>Your Source for Exotic Fishes, Aquatic Plants, and Accessories</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#accessories">Accessories</a>
+        <a href="#how-to-provide">How to Provide Fishes</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container" id="home">
+        <h2>Welcome to Aquatic Word</h2>
+        <p>Discover a wide variety of freshwater and saltwater fishes, beautiful aquatic plants, and essential accessories. From colorful guppies to air pumps, we have everything for your aquarium.</p>
+    </div>
+    <div class="container" id="products">
+        <h2>Our Products</h2>
+        
+        <div class="category">
+            <h3>Fishes</h3>
+            <div class="product">
+                <img src="https://cdn.pixabay.com/photo/2016/12/13/22/15/fish-1904555_960_720.jpg" alt="Guppy">
+                <h3>Guppy</h3>
+                <p>Colorful and easy to care for. Price: ₹250 each</p>
+                <button onclick="buyNow('Guppy', 250)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Pterophyllum_scalare_2.jpg" alt="Angelfish">
+                <h3>Angelfish</h3>
+                <p>Elegant freshwater fish. Price: ₹500 each</p>
+                <button onclick="buyNow('Angelfish', 500)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Amphiprion_ocellaris_%28Clown_anemonefish%29.jpg" alt="Clownfish">
+                <h3>Clownfish</h3>
+                <p>Popular saltwater fish. Price: ₹750 each</p>
+                <button onclick="buyNow('Clownfish', 750)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Betta_splendens_red.jpg" alt="Betta Fish">
+                <h3>Betta Fish</h3>
+                <p>Siamese fighting fish, vibrant colors. Price: ₹300 each</p>
+                <button onclick="buyNow('Betta Fish', 300)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Goldfish3.jpg" alt="Goldfish">
+                <h3>Goldfish</h3>
+                <p>Classical pond fish. Price: ₹200 each</p>
+                <button onclick="buyNow('Goldfish', 200)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Neon_tetra.jpg" alt="Neon Tetra">
+                <h3>Neon Tetra</h3>
+                <p>Small, schooling fish. Price: ₹150 each</p>
+                <button onclick="buyNow('Neon Tetra', 150)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Zebrafish.jpg" alt="Zebrafish">
+                <h3>Zebrafish</h3>
+                <p>Striped freshwater fish. Price: ₹180 each</p>
+                <button onclick="buyNow('Zebrafish', 180)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Black_molly_fish.jpg" alt="Molly">
+                <h3>Molly</h3>
+                <p>Livebearer fish. Price: ₹220 each</p>
+                <button onclick="buyNow('Molly', 220)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Swordtail_fish.jpg" alt="Swordtail">
+                <h3>Swordtail</h3>
+                <p>Colorful with sword-like tail. Price: ₹280 each</p>
+                <button onclick="buyNow('Swordtail', 280)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Sharpnose_platy.jpg" alt="Platy">
+                <h3>Platy</h3>
+                <p>Easy-going freshwater fish. Price: ₹200 each</p>
+                <button onclick="buyNow('Platy', 200)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Cichlid_Tropheus_moorii.jpg" alt="Cichlid">
+                <h3>Cichlid</h3>
+                <p>Aggressive but beautiful. Price: ₹600 each</p>
+                <button onclick="buyNow('Cichlid', 600)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Discus_fish.jpg" alt="Discus">
+                <h3>Discus</h3>
+                <p>King of the aquarium. Price: ₹1200 each</p>
+                <button onclick="buyNow('Discus', 1200)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Astronotus_ocellatus.jpg" alt="Oscar">
+                <h3>Oscar</h3>
+                <p>Large cichlid. Price: ₹800 each</p>
+                <button onclick="buyNow('Oscar', 800)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Rainbowfish.jpg" alt="Rainbowfish">
+                <h3>Rainbowfish</h3>
+                <p>Colorful schooling fish. Price: ₹350 each</p>
+                <button onclick="buyNow('Rainbowfish', 350)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Dwarf_Gourami.jpg" alt="Gourami">
+                <h3>Gourami</h3>
+                <p>Labyrinth fish. Price: ₹400 each</p>
+                <button onclick="buyNow('Gourami', 400)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Tiger_barb.jpg" alt="Tiger Barb">
+                <h3>Tiger Barb</h3>
+                <p>Active schooling fish. Price: ₹180 each</p>
+                <button onclick="buyNow('Tiger Barb', 180)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Rasbora_heteromorpha.jpg" alt="Rasbora">
+                <h3>Rasbora</h3>
+                <p>Peaceful schooling fish. Price: ₹160 each</p>
+                <button onclick="buyNow('Rasbora', 160)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Clown_Loach_Chromobotia_macracanthus.jpg" alt="Clown Loach">
+                <h3>Clown Loach</h3>
+                <p>Bottom-dwelling fish. Price: ₹450 each</p>
+                <button onclick="buyNow('Clown Loach', 450)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Tetraodon_nigroviridis.jpg" alt="Pufferfish">
+                <h3>Pufferfish</h3>
+                <p>Unique saltwater fish. Price: ₹1500 each</p>
+                <button onclick="buyNow('Pufferfish', 1500)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Koi_Carp.jpg" alt="Koi Carp">
+                <h3>Koi Carp</h3>
+                <p>Ornamental pond fish. Price: ₹1000 each</p>
+                <button onclick="buyNow('Koi Carp', 1000)">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="category">
+            <h3>Aquatic Plants</h3>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Anubias_nana.jpg" alt="Anubias">
+                <h3>Anubias</h3>
+                <p>Low-light plant. Price: ₹300 per plant</p>
+                <button onclick="buyNow('Anubias', 300)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Microsorum_pteropus_%28Java_fern%29.jpg" alt="Java Fern">
+                <h3>Java Fern</h3>
+                <p>Easy to grow. Price: ₹250 per plant</p>
+                <button onclick="buyNow('Java Fern', 250)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Echinodorus_amazonicus.jpg" alt="Amazon Sword">
+                <h3>Amazon Sword</h3>
+                <p>Large leaves. Price: ₹400 per plant</p>
+                <button onclick="buyNow('Amazon Sword', 400)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Cryptocoryne_wendtii.jpg" alt="Cryptocoryne">
+                <h3>Cryptocoryne</h3>
+                <p>Varied colors. Price: ₹200 per plant</p>
+                <button onclick="buyNow('Cryptocoryne', 200)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Vallisneria_aquatic_plant.jpg" alt="Vallisneria">
+                <h3>Vallisneria</h3>
+                <p>Tall grass-like. Price: ₹150 per plant</p>
+                <button onclick="buyNow('Vallisneria', 150)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Ceratophyllum_demersum_%28Hornwort%29.jpg" alt="Hornwort">
+                <h3>Hornwort</h3>
+                <p>Floating plant. Price: ₹100 per bunch</p>
+                <button onclick="buyNow('Hornwort', 100)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Egeria_densa.jpg" alt="Egeria">
+                <h3>Egeria</h3>
+                <p>Fast-growing. Price: ₹180 per bunch</p>
+                <button onclick="buyNow('Egeria', 180)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Ludwigia_repens.jpg" alt="Ludwigia">
+                <h3>Ludwigia</h3>
+                <p>Red stems. Price: ₹220 per plant</p>
+                <button onclick="buyNow('Ludwigia', 220)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Rotala_rotundifolia.jpg" alt="Rotala">
+                <h3>Rotala</h3>
+                <p>Colorful leaves. Price: ₹250 per bunch</p>
+                <button onclick="buyNow('Rotala', 250)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Bacopa_monnieri.jpg" alt="Bacopa">
+                <h3>Bacopa</h3>
+                <p>Stem plant. Price: ₹200 per bunch</p>
+                <button onclick="buyNow('Bacopa', 200)">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" id="accessories">
+        <h2>Aquarium Accessories</h2>
+        <p>Essential tools to keep your aquarium running smoothly.</p>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300" alt="Air Pump">
+            <h3>Air Pump</h3>
+            <p>Provides oxygen for fish. Price: ₹500</p>
+            <button onclick="buyNow('Air Pump', 500)">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300" alt="Filter">
+            <h3>Aquarium Filter</h3>
+            <p>Keeps water clean. Price: ₹800</p>
+            <button onclick="buyNow('Aquarium Filter', 800)">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300" alt="Pipe">
+            <h3>Air Pipe</h3>
+            <p>Connects air pump to air stone. Price: ₹100</p>
+            <button onclick="buyNow('Air Pipe', 100)">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300" alt="Air Stone">
+            <h3>Air Stone</h3>
+            <p>Creates bubbles for aeration. Price: ₹150</p>
+            <button onclick="buyNow('Air Stone', 150)">Buy Now</button>
+        </div>
+    </div>
+    
+    <!-- Other sections (How to Provide, About) as before -->
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>Address: MSK Mill near Huzafa Masjid</p>
+        <p>Mobile: 7760801620</p>
+        <p>Email: info@aquaticword.com</p>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Aquatic Word. All rights reserved.</p>
+    </footer>
+    <script>
+        function buyNow(item, price) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ item, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            window.location.href = 'checkout.html';
+        }
+    </script>
+</body>
+</html>
